@@ -21,3 +21,5 @@ Route::get('/', function () {
 });
 
 Route::get('/cars', [CarsController::class, 'index']);
+
+Route::get('/cars/{car}', [CarsController::class, 'show']);

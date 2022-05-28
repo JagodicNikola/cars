@@ -4,7 +4,8 @@
   <h1>Cars</h1>
   @foreach ($cars as $car) 
    <ul>
-    <li>{{$car->producer}} : {{$car->title}}</li>
+    <li><a href="cars/{{$car->id}}">{{$car->producer}} 
+     : {{$car->title}}</a></li>
    </ul>
   @endforeach
  </body>
