@@ -19,6 +19,16 @@
         </style>
     </head>
     <body class="antialiased">
-        <h2>Welcome</h2>
+
+        @include('partials.navbar')
+
+       
+          
+     <div class="container-fluid">
+        @yield('content')
+
+
+     </div>
+    
     </body>
 </html>

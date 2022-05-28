@@ -16,8 +16,11 @@ use App\Http\Controllers\CarsController;
 */
 
 Route::get('/', function () {
-    $name = 'Nikola';
-    return view('welcome', compact('name'));
+    
+    return view('welcome');
+});
+Route::get('/about', function () {
+    return view('about');
 });
 
 Route::get('/cars', [CarsController::class, 'index']);

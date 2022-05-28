@@ -1,12 +1,16 @@
-<html>
- <head></head>
- <body>
+@extends('layouts.app')
+
+@section('title', 'Cars')
+
+@section('content')
   <h1>Cars</h1>
-  @foreach ($cars as $car) 
+  
    <ul>
+    @foreach ($cars as $car) 
     <li><a href="cars/{{$car->id}}">{{$car->producer}} 
      : {{$car->title}}</a></li>
+     @endforeach
    </ul>
-  @endforeach
- </body>
-</html>
+  
+
+  @endsection
